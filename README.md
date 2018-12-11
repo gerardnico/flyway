@@ -4,19 +4,19 @@ A flyway demo/sample repository to be able to start rapidly a [flyway](https://f
 This project has:
 
   * a wrapper dos script around the `flyway` command called [fly.cmd](fly.cmd)
-  * the [sql subdirectory](./sql) where the SQL file must be located called 
+  * the [sql subdirectory](./sql) where the SQL file must be located 
   * one sample SQL file called [V1__first.sql](./sql/V1__first.sql) 
 
 ## Steps
 
   * Install Flyway and add the install directory in the PATH environment variable
-  * The `--help` option should word for the `flyway` command
+  * The `--help` option should work for the `flyway` command
 ```bash  
 flyway --help
 ```
   * Add the current directory to the `PATH` environment variable of your OS to be able to call the flyway wrapper script [fly](fly.cmd)
   * FYI: The [fly.cmd](fly.cmd) gives through the option `-locations=filesystem:%cd%\sql` a relative location of the SQL file which is the sub-directory [sql](./sql)
-  * The `--help` option should word for the [fly](fly.cmd) 
+  * The `--help` option should work for the [fly](fly.cmd) command 
 ```bash  
 fly --help
 ``` 
